@@ -1,5 +1,5 @@
 import { FormFieldEnum } from "@/components/CustomForm";
-import { Control } from "react-hook-form";
+import { Control, FieldValues } from "react-hook-form";
 
 export interface CustomProps {
     control: Control<any>;

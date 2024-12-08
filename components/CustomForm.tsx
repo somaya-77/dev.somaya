@@ -9,7 +9,7 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
+// import { Input } from "@/components/ui/input"
 import Image from 'next/image';
 import { Textarea } from './ui/textarea';
 import { Checkbox } from './ui/checkbox';
@@ -17,6 +17,7 @@ import { Select, SelectContent, SelectTrigger, SelectValue } from './ui/select';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { E164Number } from "libphonenumber-js/core";
+import { Input } from './ui/input';
 
 export enum FormFieldEnum {
     INPUT = "input",

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DataTable = () => {
+const MedicalForm = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const DataTable = () => {
   )
 }
 
-export default DataTable
+export default MedicalForm
