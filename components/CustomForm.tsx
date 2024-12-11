@@ -1,15 +1,11 @@
 import { CustomProps } from '@/interface'
-// import React from 'react'
 import {
-    Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
-// import { Input } from "@/components/ui/input"
 import Image from 'next/image';
 import { Textarea } from './ui/textarea';
 import { Checkbox } from './ui/checkbox';
@@ -18,6 +14,9 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { E164Number } from "libphonenumber-js/core";
 import { Input } from './ui/input';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 export enum FormFieldEnum {
     INPUT = "input",
@@ -53,8 +52,9 @@ const CustomForm = (props: CustomProps) => {
 }
 
 export default CustomForm;
-
+// **         Render Input       ** //
 const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
+
     switch (props.fieldType) {
         case FormFieldEnum.INPUT:
             return (
@@ -110,12 +110,17 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
                         src="/assets/icons/calendar.svg"
                         height={24}
                         width={24}
-                        alt="user"
+                        alt="calendar"
                         className="ml-2"
                     />
 
                     <FormControl>
-                        {/* TODO */}
+                        <DatePicker selected={field.value} onChange={(date) => field.onChange(date)} 
+                            dateFormat={props.dateFormat ?? 'MM/dd/yyyy'}
+                            showTimeSelect={props.showTimeSelect ?? false}
+                            // timeInputLabel='Time:'
+                            wrapperClassName='date-picker'
+                            />
                     </FormControl>
 
                 </div>
@@ -126,14 +131,14 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
             return (
                 <FormControl>
                     <PhoneInput
-                    defaultCountry='EG'
+                        defaultCountry='EG'
                         placeholder={props.placeholder}
                         international
                         withCountryCallingCode
                         value={field.value as E164Number | undefined}
-                        onChange={field.onChange} 
+                        onChange={field.onChange}
                         className='input-phone'
-                        />
+                    />
                 </FormControl>
             );
 
