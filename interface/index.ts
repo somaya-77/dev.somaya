@@ -28,3 +28,8 @@ export interface StatCardProps {
     label: string;
     icon: string;
 }
+
+export interface UploadFile {
+    files: File[] | undefined;
+    onChange: (files: File[]) => void;
+}

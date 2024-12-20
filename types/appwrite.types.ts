@@ -14,13 +14,15 @@ export interface Patient extends Models.Document {
     primaryPhysician: string;
     insuranceProvider: string;
     insurancePolicyNumber: string;
-    allergies: string | undefined;
-    currentMedication: string | undefined;
-    familyMedicalHistory: string | undefined;
-    pastMedicalHistory: string | undefined;
-    identificationType: string | undefined;
-    identificationNumber: string | undefined;
+    allergies: string | null;
+    currentMedication: string | null;
+    familyMedicalHistory: string | null;
+    pastMedicalHistory: string | null;
+    identificationType: string | null;
+    identificationNumber: string | null;
     identificationDocument: FormData | undefined;
+    treatmentConsent: boolean;
+    disclosureConsent: boolean;
     privacyConsent: boolean;
 }
 

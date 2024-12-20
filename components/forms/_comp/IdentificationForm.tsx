@@ -1,5 +1,7 @@
 import CustomForm, { FormFieldEnum } from '@/components/CustomForm'
+import { FormControl } from '@/components/ui/form'
 import { SelectItem } from '@/components/ui/select'
+import Uploader from '@/components/Uploader'
 import { IdentificationTypes } from '@/constants'
 import { Patient } from '@/types/appwrite.types'
 import React from 'react'
@@ -31,15 +33,18 @@ const IdentificationForm = ({ form }: { form: UseFormReturn<Patient> }) => {
             />
 
             <CustomForm
-                fieldType={FormFieldEnum.SELECT}
+                fieldType={FormFieldEnum.SKELETON}
                 control={form.control}
                 name="identificationDocument"
                 label="Scanned Copy of Identification Document"
-            // placeholder="John Doe"
+                renderSkeleton={(filed) => (
+                    <FormControl>
+                        <Uploader files={filed.value} onChange={filed.onChange}/>
+                    </FormControl>
+                )}
             />
-
         </>
     )
 }
 
-export default IdentificationForm
+export default IdentificationForm;

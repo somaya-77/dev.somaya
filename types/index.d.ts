@@ -5,7 +5,7 @@ declare type SearchParamProps = {
     searchParams: { [key: string]: string | string[] | undefined };
 };
 
-declare type Gender = "Male" | "Female" | "Other";
+declare type Gender = "male" | "female" | "other";
 declare type Status = "pending" | "scheduled" | "cancelled";
 
 declare interface CreateUserParams {
@@ -28,13 +28,15 @@ declare interface RegisterUserParams extends CreateUserParams {
     primaryPhysician: string;
     insuranceProvider: string;
     insurancePolicyNumber: string;
-    allergies: string | undefined;
+    allergies: string | null;
     currentMedication: string | undefined;
     familyMedicalHistory: string | undefined;
     pastMedicalHistory: string | undefined;
     identificationType: string | undefined;
     identificationNumber: string | undefined;
     identificationDocument: FormData | undefined;
+    treatmentConsent: boolean;
+    disclosureConsent: boolean;
     privacyConsent: boolean;
 }
 

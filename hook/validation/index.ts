@@ -19,7 +19,7 @@ export const patientSchema = z.object({
     birthDate: z.coerce.date().refine((date) => !isNaN(date.getTime()), {
         message: "Birth date is required",
     }),
-    gender: z.enum(["Male", "Female", "Other", "Unknown"], {
+    gender: z.enum(["male", "female", "other"], {
         invalid_type_error: "Invalid gender",
     }),
     address: z.string().min(1, "Address is required"),
@@ -36,6 +36,12 @@ export const patientSchema = z.object({
     identificationType: z.string().nullable(),
     identificationNumber: z.string().nullable(),
     identificationDocument: z.instanceof(FormData).nullable(),
+    treatmentConsent: z.boolean().refine((val) => val === true, {
+        message: "Privacy consent is required",
+    }),
+    disclosureConsent: z.boolean().refine((val) => val === true, {
+        message: "Privacy consent is required",
+    }),
     privacyConsent: z.boolean().refine((val) => val === true, {
         message: "Privacy consent is required",
     }),

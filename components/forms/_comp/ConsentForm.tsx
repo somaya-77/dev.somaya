@@ -9,21 +9,21 @@ const ConsentForm = ({ form }: { form: UseFormReturn<Patient> }) => {
         <CustomForm
             fieldType={FormFieldEnum.CHECKBOX}
             control={form.control}
-            name="identificationType"
+            name="treatmentConsent"
             label="I consent to receive treatment for my health condition."
         />
 
         <CustomForm
             fieldType={FormFieldEnum.CHECKBOX}
             control={form.control}
-            name="identificationNumber"
+            name="disclosureConsent"
             label="I consent to the use and disclosure of my health information for treatment purposes."
         />
 
         <CustomForm
             fieldType={FormFieldEnum.CHECKBOX}
             control={form.control}
-            name="identificationDocument"
+            name="privacyConsent"
             label="I acknowledge that I have reviewed and agree to the privacy policy."
         />
 

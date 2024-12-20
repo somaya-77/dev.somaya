@@ -12,7 +12,7 @@ export const PatientValues = {
     email: '',
     phone: '',
     birthDate: new Date(),
-    gender:  "Male" as Gender,
+    gender:  "male" as Gender,
     address: '',
     occupation: '',
     emergencyContactName: '',
@@ -27,5 +27,7 @@ export const PatientValues = {
     identificationType: undefined,
     identificationNumber: undefined,
     identificationDocument: undefined,
+    treatmentConsent: false,
+    disclosureConsent: false,
     privacyConsent: false,
 };
