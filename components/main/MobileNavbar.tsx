@@ -5,6 +5,7 @@ import { links } from "@/utils/contact";
 import { CiMenuFries } from 'react-icons/ci';
 import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Button } from "../ui/button";
 
 const MobileNavbar = () => {
     const pathname = usePathname()
@@ -33,7 +34,11 @@ const MobileNavbar = () => {
                             </Link>
                         </SheetClose>
                     })}
+                    <Link href="https://wa.me/01208188574" className="text-center w-full inline-block">
+                        <Button>Hire me</Button>
+                    </Link>
                 </nav>
+
             </SheetContent>
         </Sheet>
     )
