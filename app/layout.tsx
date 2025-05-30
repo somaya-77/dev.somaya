@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Somaya",
-  description: "A healthcare management system ",
+  description: "Software Development",
 };
 
 export default function RootLayout({

@@ -1,7 +1,5 @@
 'use client'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
+import ContactForm from '@/components/ContactForm'
 import { info } from '@/utils/contact'
 import { motion } from 'framer-motion'
 
@@ -11,23 +9,7 @@ const Contact = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-[30px]'>
           <div className='xl:h-[54%] order-2 xl:order-none bg-white/10 rounded-xl'>
-            <form action="" method="post" className='flex flex-col gap-[30px] p-8'>
-              <h2 className='h2 text-accent'>Let&apos;s work together</h2>
-              <p className="text-white/60"> I&apos;m always open to exciting new opportunities, collaborations, and freelance projects. Whether you have an idea, a question, or just want to say hello — feel free to reach out using the form below. Let’s build something amazing together!</p>
-
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-[30px]'>
-                <Input type="firstname" name="firstname" placeholder='Firstname' />
-                <Input type="lastname" name="lastname" placeholder='Lastname' />
-                <Input type="email" name="email" placeholder='Email address' />
-                <Input type="phone" name="phone" placeholder='phone number' />
-              </div>
-
-              <Textarea className='h-[200px]' placeholder='Type your message here.' />
-
-              <Button size="md" className='max-w-40'>
-                Send message
-              </Button>
-            </form>
+           <ContactForm />
           </div>
 
           <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>
