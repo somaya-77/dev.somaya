@@ -16,7 +16,7 @@ const MobileNavbar = () => {
             </SheetTrigger>
 
             <SheetContent>
-                <div className='mt-32 mb-40 text-center text-2xl' >
+                <div className='my-20 text-center text-2xl' >
 
                     <Link href="/">
                         <h1 className='font-semibold text-4xl'>
@@ -25,7 +25,7 @@ const MobileNavbar = () => {
                     </Link>
                 </div>
 
-                <nav className="flex flex-col gap-8 justify-center items-center">
+                <nav className="flex flex-col gap-8 justify-start items-center">
                     {links.map(link => {
                         return <SheetClose asChild key={link.name}>
                             <Link href={link.path}
