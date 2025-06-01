@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Social from "./Social";
 import { Button } from "./ui/button";
 import { FiDownload } from "react-icons/fi";
@@ -10,9 +11,11 @@ const Hero = () => {
             <h1 className="h1 mb-6">Hello I&apos;m <br /> <span className="mt-2 inline-flex text-accent">Somaya Adel El-khateeb</span></h1>
             <p className="max-w-[650px] mb-9 text-white/80">I’m passionate about building scalable, high-performance web applications using modern technologies. With a strong foundation in computer and information systems, I specialize in both front-end and back-end development. My core tech stack includes React, Next.js, Node.js, and Express — allowing me to deliver full-stack solutions that are efficient, secure, and user-focused.</p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-                <Button size="lg" variant="outline" className="flex gap-2 uppercase items-center">
-                    <span>Download CV</span>
-                    <FiDownload className="text-xl" />
+                <Button size="lg" variant="outline" >
+                    <Link href="/Software Developer - Somaya_Elkhateeb.pdf" download className="flex gap-2 uppercase items-center">
+                        <span>Download CV</span>
+                        <FiDownload className="text-xl" />
+                    </Link>
                 </Button>
 
                 {/* social */}
