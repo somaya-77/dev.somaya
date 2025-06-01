@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNode, FaSass, FaBootstrap, FaFigma, FaGit, FaPhoneAlt,FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNode, FaSass, FaBootstrap, FaFigma, FaGit, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiMui, SiDaisyui, SiShadcnui, SiExpress, SiMongodb, SiTailwindcss, SiPostman } from "react-icons/si";
@@ -13,12 +13,12 @@ export const info = [
     {
         icon: FaEnvelope,
         title: "Email",
-        description: "alkhtybsmytadl@gmail.com",
+        description: "dev.somayaadelelkhateeb@gmail.com",
     },
     {
         icon: FaMapMarkerAlt,
         title: "Address",
-        description: "Cairo, Egypt",
+        description: "Egypt",
     },
 ]
 
@@ -172,7 +172,7 @@ digital solutions.`,
     info: [
         {
             fieldName: "Name",
-            fieldValue: "Somaya El-khatteb"
+            fieldValue: "Somaya Adel El-khatteb"
         },
         {
             fieldName: "Phone",
@@ -182,19 +182,19 @@ digital solutions.`,
             fieldName: "Experience",
             fieldValue: "3+ Years"
         },
-            {
+        {
             fieldName: "WhatsApp",
             fieldValue: "(+20) 120 818 8574"
         },
-       
+        {
+            fieldName: "Address",
+            fieldValue: "Egypt"
+        },
         {
             fieldName: "Nationality",
             fieldValue: "Egyptian"
         },
-        {
-            fieldName: "Email",
-            fieldValue: "alkhtybsmytadl@gmail.com"
-        },
+
         {
             fieldName: "Freelance",
             fieldValue: "Available"
@@ -202,6 +202,10 @@ digital solutions.`,
         {
             fieldName: "Languages",
             fieldValue: "Arabic, English"
+        },
+        {
+            fieldName: "Email",
+            fieldValue: "dev.somayaadelelkhateeb@gmail.com"
         },
     ]
 }
@@ -260,7 +264,7 @@ export const projects = [
         description: "Electro is a full-stack e-commerce web application built with Next.js for the frontend and Node.js for the backend. It provides a seamless shopping experience with two user roles: admin and regular user. Admins can manage products through a complete CRUD system, allowing them to add, update, and delete products. Users can browse products, add them to their favorites, compare different items, and complete purchases easily. The project integrates modern technologies such as Tailwind CSS, Redux Toolkit, ShadCN UI, Framer Motion, React Hook Form, and Zod for validation, along with a MongoDB database to handle data efficiently. The application offers a responsive and interactive interface, with secure authentication for both admin and user roles.",
         demo: "https://electro-nextjs.netlify.app",
         github: "https://github.com/somaya-77/Electro-Next-js",
-        stack: [{ name: "next.js" }, { name: "mongodb" }, { name: "node.js" }, { name: "typescript" }, { name: "redux-toolkit" } ,{ name: "shadcn" }, { name: "tailwindcss" }],
+        stack: [{ name: "next.js" }, { name: "mongodb" }, { name: "node.js" }, { name: "typescript" }, { name: "redux-toolkit" }, { name: "shadcn" }, { name: "tailwindcss" }],
         image: "/assets/electro.png",
     },
     {
@@ -270,7 +274,7 @@ export const projects = [
         description: "Snapgram is a modern social media web application built with Next.js and powered by a Node.js backend and Prisma ORM that allows users to create edit delete and save posts as well as add them to favorites the platform supports image uploads via Cloudinary enables smooth and responsive UI using Tailwind CSS and Radix UI components and integrates authentication and secure data handling using JWT and bcrypt with a fully functional CRUD system for managing posts Snapgram also features responsive design dark mode theme toggling and seamless user experience enhanced by React Query Redux Toolkit and React Hook Form",
         demo: "https://snapgram-social-media-app.netlify.app",
         github: "https://github.com/somaya-77/snapGram",
-        stack: [{ name: "nextJS" }, { name: "typescript" }, { name: "prisma" },{ name: "postgress" }, { name: "tailwindcss" }],
+        stack: [{ name: "nextJS" }, { name: "typescript" }, { name: "prisma" }, { name: "postgress" }, { name: "tailwindcss" }],
         image: "/assets/snapgram.png",
     },
     {
@@ -280,7 +284,7 @@ export const projects = [
         description: "Comfy Store is a modern and responsive e-commerce web application built with React and Vite, offering users a seamless shopping experience. The platform allows users to browse a wide range of products with powerful filtering and search capabilities. It includes features such as quantity selection, tax calculation, and the ability to add items to the cart and proceed to checkout. The application supports both light and dark themes for an optimized user interface, and utilizes Redux Toolkit for state management, DaisyUI and Tailwind CSS for styling, and React Router for smooth navigation. With a focus on performance and user experience, Comfy Store delivers a complete and interactive online shopping solution.",
         demo: "https://comfy-store-00.netlify.app/",
         github: "https://github.com/somaya-77/Comfy-store",
-        stack: [{ name: "reactJs" }, { name: "redux toolkit" }, { name: "dasyUI" }, { name: "tailwindcss" }, { name: "react router" }],
+        stack: [{ name: "reactJs" }, { name: "redux toolkit" }, { name: "api" }, { name: "dasyUI" }, { name: "tailwindcss" }, { name: "react router" }],
         image: "/assets/comfystore.png",
     },
     {
@@ -290,7 +294,7 @@ export const projects = [
         description: "Travel UI is a visually captivating and fully responsive travel-themed user interface built using HTML, Sass, and JavaScript. The project showcases a refined layout with deeply structured Flexbox design, ensuring fluid alignment and responsiveness across all screen sizes. The interface delivers a clean, modern look, enhanced with professional animations that create smooth transitions and engaging interactions. Sass is used to write modular, maintainable styles with variables and mixins, enabling a scalable and well-organized styling system. The result is a polished frontend project that highlights both design aesthetics and frontend development best practices.",
         demo: "https://travel-photo.netlify.app",
         github: "https://github.com/somaya-77/Travel",
-        stack: [ { name: "html" },{ name: "sass" }, { name: "javascript" }],
+        stack: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
         image: "/assets/travel.png",
     },
     {
@@ -299,25 +303,25 @@ export const projects = [
         title: "arceeh",
         description: "Arceeh UI is a sleek and modern frontend user interface crafted with pure HTML and CSS, inspired by the Archee design style—characterized by clean geometry, bold visuals, and architectural precision. The project delivers a professional layout with carefully structured sections and a strong emphasis on visual hierarchy. Interactive elements are seamlessly integrated, including animated transitions and the ability to open and close modal windows, enhancing user engagement. Custom animations enrich the user experience with smooth effects, while the clean, responsive structure ensures the UI performs well across devices. This project demonstrates a strong grasp of layout composition, animation techniques, and design consistency using only HTML and CSS.",
         github: "https://github.com/somaya-77/Arceeh",
-       stack: [ { name: "html" },{ name: "css" }],
+        stack: [{ name: "html" }, { name: "css" }],
         image: "/assets/archee.png",
     },
-        {
+    {
         num: '06',
         category: "frontend",
         title: "",
         description: "Cointech UI is a sleek and modern frontend user interface crafted with pure HTML and CSS, inspired by the Archee design style—characterized by clean geometry, bold visuals, and architectural precision. The project delivers a professional layout with carefully structured sections and a strong emphasis on visual hierarchy. Interactive elements are seamlessly integrated, including animated transitions and the ability to open and close modal windows, enhancing user engagement. Custom animations enrich the user experience with smooth effects, while the clean, responsive structure ensures the UI performs well across devices. This project demonstrates a strong grasp of layout composition, animation techniques, and design consistency using only HTML and CSS.",
         github: "https://github.com/somaya-77/Demo",
-         stack: [ { name: "html" },{ name: "css" }],
+        stack: [{ name: "html" }, { name: "css" }],
         image: "/assets/demo.png",
     },
-        {
+    {
         num: '07',
         category: "frontend",
-      title: "brave",
+        title: "brave",
         description: "Brave UI is a sleek and modern frontend user interface crafted with pure HTML and CSS, inspired by the Archee design style—characterized by clean geometry, bold visuals, and architectural precision. The project delivers a professional layout with carefully structured sections and a strong emphasis on visual hierarchy. Interactive elements are seamlessly integrated, including animated transitions and the ability to open and close modal windows, enhancing user engagement. Custom animations enrich the user experience with smooth effects, while the clean, responsive structure ensures the UI performs well across devices. This project demonstrates a strong grasp of layout composition, animation techniques, and design consistency using only HTML and CSS.",
         github: "https://github.com/somaya-77/Brave",
-            stack: [ { name: "html" },{ name: "css" }],
+        stack: [{ name: "html" }, { name: "css" }],
         image: "/assets/brave.png",
     },
     //     {
