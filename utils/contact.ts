@@ -24,85 +24,24 @@ export const info = [
 
 export const skills = {
     title: "My skills",
-    description: "I have hands-on experience in modern front-end and back-end development, crafting responsive, scalable, and maintainable web applications. My technical expertise spans a wide range of tools and frameworks, enabling me to build seamless digital experiences from concept to deployment.",
+    description: `Frontend Developer with 3 years of experience in creating scalable web applications, enterprise dashboards, and multi-tenant SaaS platforms. Skilled in React.js, Next.js, TypeScript, Tailwind CSS, Material UI, ShadCN UI, and modern backend technologies. Passionate about building maintainable, high-performance applications and delivering seamless user experiences.`,
     skillsList: [
-        {
-            icon: FaHtml5,
-            name: "html 5",
-        },
-        {
-            icon: FaCss3Alt,
-            name: "css 3",
-        },
-        {
-            icon: FaJsSquare,
-            name: "javascript",
-        },
-        {
-            icon: BiLogoTypescript,
-            name: "typescript",
-        },
-        {
-            icon: FaReact,
-            name: "react.js",
-        },
-        {
-            icon: RiNextjsFill,
-            name: "next.js",
-        },
-        {
-            icon: TbBrandGraphql,
-            name: "graphql",
-        },
-        {
-            icon: FaNode,
-            name: "nodeJS",
-        },
-        {
-            icon: SiExpress,
-            name: "express",
-        },
-        {
-            icon: SiMongodb,
-            name: "mongodb",
-        },
-        {
-            icon: SiTailwindcss,
-            name: "tailwind.css",
-        },
-        {
-            icon: FaBootstrap,
-            name: "bootstrap.css",
-        },
-        {
-            icon: FaSass,
-            name: "sass",
-        },
-        {
-            icon: SiMui,
-            name: "material-ui",
-        },
-        {
-            icon: SiDaisyui,
-            name: "daisyui",
-        },
-        {
-            icon: SiShadcnui,
-            name: "shadcn ui",
-        },
-
-        {
-            icon: FaFigma,
-            name: "figma",
-        },
-        {
-            icon: SiPostman,
-            name: "postman",
-        },
-        {
-            icon: FaGit,
-            name: "git",
-        },
+        { icon: FaHtml5, name: "HTML5" },
+        { icon: FaCss3Alt, name: "CSS3" },
+        { icon: FaJsSquare, name: "JavaScript" },
+        { icon: BiLogoTypescript, name: "TypeScript" },
+        { icon: FaReact, name: "React.js" },
+        { icon: RiNextjsFill, name: "Next.js" },
+        { icon: TbBrandGraphql, name: "GraphQL" },
+        { icon: SiTailwindcss, name: "Tailwind CSS" },
+        { icon: FaBootstrap, name: "Bootstrap" },
+        { icon: FaSass, name: "Sass" },
+        { icon: SiMui, name: "Material UI" },
+        { icon: SiDaisyui, name: "DaisyUI" },
+        { icon: SiShadcnui, name: "ShadCN UI" },
+        { icon: FaFigma, name: "Figma" },
+        { icon: SiPostman, name: "Postman" },
+        { icon: FaGit, name: "Git" },
     ]
 }
 export const links = [
@@ -164,11 +103,8 @@ export const services = [
 
 export const about = {
     title: "About me",
-    description: `Front-End Developer with over 2 years of experience in building responsive, user-centric, and scalable web 
-applications using React.js, TypeScript, and Next.js. Proficient in creating modern, accessible, and elegant user 
-interfaces using Tailwind CSS, Material UI, and ShadCN UI. Skilled in writing clean, maintainable code and delivering 
-high-performance UIs. Passionate about seamless user experience and working in agile teams to develop impactful 
-digital solutions.`,
+    description: `Frontend Developer with 3 years of experience in creating scalable web applications, enterprise dashboards, and multi-tenant SaaS platforms. Skilled in React.js, Next.js, TypeScript, Tailwind CSS, Material UI, ShadCN UI, and modern backend technologies. Passionate about building maintainable, high-performance applications and delivering seamless user experiences.`,
+
     info: [
         {
             fieldName: "Name",
@@ -176,7 +112,7 @@ digital solutions.`,
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+20) 120 592 8111"
+            fieldValue: "(+20) 128 906 0375"
         },
         {
             fieldName: "Experience",
@@ -212,48 +148,23 @@ digital solutions.`,
 
 export const experience = {
     icon: "",
-    title: "My experience",
-    description: `Led the development of a scalable and user-friendly control panel for a large-scale project, significantly improving both user experience and system functionality.  including architectural planning, deployment, and seamless GitHub integration with version control best practices.
-Collaborated closely with the team leader to delegate tasks, conduct thorough code reviews, and maintain an efficient development workflow.
-Enhanced technical expertise in React, Redux Toolkit, Tailwind CSS, Zod, React Query, and other modern front-end technologies.
-Acquired in-depth experience in API integration, as well as state and data management in complex applications. Demonstrated strong problem-solving abilities by overcoming technical challenges and consistently applying clean code and industry best practices.`,
+    title: "My Experience",
+    description: `Led the development of enterprise-grade, multi-module systems including dashboards, admin panels, and configuration-driven forms. Collaborated closely with backend engineers and stakeholders to deliver scalable and maintainable solutions with proper role-based access control (RBAC) and multi-tenant support. Gained extensive experience in React.js, Next.js, Redux Toolkit, Tailwind CSS, GraphQL, REST APIs, and modern development workflows.`,
     items: [
-        {
-            company: "Smartive media.",
-            position: "Front-End Developer",
-            duration: "2024 - Present",
-        }
+        { company: "ComplyMarket", position: "Frontend Developer", duration: "April 2025 – Present" },
+        { company: "Smartive Media", position: "Frontend Developer", duration: "March 2024 – June 2025" },
     ]
 }
 
 export const education = {
     icon: "",
-    title: "My education",
-    description: `I hold a strong academic background in software development, having earned a Bachelor’s degree in Computer and Information Systems from Alexandria University. During my academic journey, I developed a solid understanding of web development, programming, and software engineering principles—both in theory and in practice.
-
-My education provided me with the technical foundation and critical thinking skills necessary to design and build efficient, user-centric web applications. I was actively involved in team projects, which not only strengthened my collaboration and communication abilities but also nurtured leadership skills essential for working in dynamic development environments.`,
-
+    title: "My Education",
+    description: `Bachelor’s degree in Computer and Information Systems from Alexandria University, with a strong foundation in web development, software engineering, and programming principles. Additional professional training in Frontend development through Udacity and Manara.`,
     items: [
-        {
-            institution: "Alexandria University",
-            degree: "Bachelor’s Degree in Computer and Information Systems",
-            duration: "Graduated in 2022",
-            specialization: "It Section",
-        },
-        {
-            institution: "Udacity",
-            degree: "Professional Web Development Nanodegree",
-            specialization: "Front-End Development",
-            duration: "Completed in 2022",
-        },
-        {
-            institution: "Manara",
-            degree: "Front-End Development Program",
-            specialization: "Advanced Front-End Development Training",
-            duration: "Ongoing",
-        },
+        { institution: "Alexandria University", degree: "Bachelor’s Degree in Computer and Information Systems", specialization: "IT Section", duration: "Graduated 2022" },
+        { institution: "Udacity", degree: "Professional Web Development Nanodegree", specialization: "Frontend Development", duration: "Completed 2022" },
+        { institution: "Manara", degree: "Frontend Development Program", specialization: "Advanced Frontend Training", duration: "Ongoing" },
     ]
-
 }
 
 export const projects = [
@@ -261,11 +172,12 @@ export const projects = [
         num: '01',
         category: "full-stack",
         title: "electro",
-        description: "Electro is a full-stack e-commerce web application built with Next.js for the frontend and Node.js for the backend. It provides a seamless shopping experience with two user roles: admin and regular user. Admins can manage products through a complete CRUD system, allowing them to add, update, and delete products. Users can browse products, add them to their favorites, compare different items, and complete purchases easily. The project integrates modern technologies such as Tailwind CSS, Redux Toolkit, ShadCN UI, Framer Motion, React Hook Form, and Zod for validation, along with a MongoDB database to handle data efficiently. The application offers a responsive and interactive interface, with secure authentication for both admin and user roles.",
+        description: "Electro is a full-stack e-commerce web application built with Next.js for the frontend and Prisma ORM for the backend. It provides a seamless shopping experience with two user roles: admin and regular user. Admins can manage products through a complete CRUD system, allowing them to add, update, and delete products. Users can browse products, add them to their favorites, compare different items, and complete purchases easily. The project integrates modern technologies such as Tailwind CSS, Redux Toolkit, ShadCN UI, Framer Motion, React Hook Form, and Zod for validation, along with Prisma ORM to efficiently handle the database and data models. The application offers a responsive and interactive interface, with secure authentication for both admin and user roles.",
         demo: "https://electro-nextjs.netlify.app",
         github: "https://github.com/somaya-77/Electro-Next-js",
-        stack: [{ name: "next.js" }, { name: "mongodb" }, { name: "node.js" }, { name: "typescript" }, { name: "redux-toolkit" }, { name: "shadcn" }, { name: "tailwindcss" }],
+        stack: [{ name: "next.js" }, { name: "prisma ORM" }, { name: "typescript" }, { name: "redux-toolkit" }, { name: "shadcn" }, { name: "tailwindcss" }],
         image: "/assets/electro.png",
+        status: "progress",
     },
     {
         num: '02',

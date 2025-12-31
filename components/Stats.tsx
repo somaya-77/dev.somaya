@@ -5,7 +5,7 @@ import { state } from "@/utils/contact";
 import CountUp from "react-countup"
 const Stats = () => {
     return (
-        <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
+        <section className="pt-4 pb-12 xl:pt-0">
             <div className="container mx-auto">
                 <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
                 {state.map((item, index) => (
