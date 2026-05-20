@@ -18,7 +18,7 @@ const ContactForm = () => {
     return (
         <form action="https://formspree.io/f/mldnrqba" ref={formRef} method="POST" className='flex flex-col gap-[30px] p-8' onSubmit={handleSubmit}>
             <h2 className='h2 text-accent'>Let&apos;s work together</h2>
-            <p className="text-white/60"> I&apos;m always open to exciting new opportunities, collaborations, and freelance projects. Whether you have an idea, a question, or just want to say hello — feel free to reach out using the form below. Let’s build something amazing together!</p>
+            <p className="text-white/60">I'm always open to exciting opportunities, professional collaborations, and full-stack or frontend freelance projects. Whether you have a complex SaaS platform to build or just want to say hello—feel free to reach out!</p>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[30px]'>
                 <Input type="text" name="firstname" placeholder="Firstname" required />

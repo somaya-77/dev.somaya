@@ -1,8 +1,12 @@
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNode, FaSass, FaBootstrap, FaFigma, FaGit, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaDocker } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
+import {  FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { 
+    FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaSass, FaBootstrap, FaGit, FaFigma 
+} from "react-icons/fa";
+import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiMui, SiDaisyui, SiShadcnui, SiExpress, SiMongodb, SiTailwindcss, SiPostman, SiReactquery, SiRedux, SiAuth0, SiKubernetes } from "react-icons/si";
-import { TbBrandGraphql } from "react-icons/tb";
+import { TbBrandGraphql, TbBrandPrisma } from "react-icons/tb";
+import { SiReactquery, SiRedux, SiTailwindcss, SiMui, SiDaisyui, SiShadcnui, SiPostman, SiZod } from "react-icons/si";
+import { ProjectItem } from "./types";
 
 export const info = [
     {
@@ -24,45 +28,42 @@ export const info = [
 
 export const skills = {
     title: "My skills",
-    description: `Frontend Developer with 3 years of experience in creating scalable web applications, enterprise dashboards, and multi-tenant SaaS platforms. Skilled in React.js, Next.js, TypeScript, Tailwind CSS, Material UI, ShadCN UI, and modern backend technologies. Passionate about building maintainable, high-performance applications and delivering seamless user experiences.`,
+    description: "Frontend & Full-Stack Developer with 4 years of experience delivering high-performance SaaS applications, complex admin dashboards, and scalable e-commerce solutions. Expert in crafting resilient responsive architectures, optimizing server-state management, and deploying robust full-stack data layers.",
     skillsList: [
-        // Core Web
+        // Core Web & Languages
         { icon: FaHtml5, name: "HTML5" },
         { icon: FaCss3Alt, name: "CSS3" },
         { icon: FaJsSquare, name: "JavaScript (ES6+)" },
         { icon: BiLogoTypescript, name: "TypeScript" },
 
-        // Frontend Frameworks
+        // Frontend Ecosystem
         { icon: FaReact, name: "React.js" },
-        { icon: RiNextjsFill, name: "Next.js (App Router & Pages Router)" },
+        { icon: RiNextjsFill, name: "Next.js (App Router)" },
 
-        // State & Data
-        { icon: TbBrandGraphql, name: "GraphQL" },
-        { icon: SiReactquery, name: "React Query (TanStack Query)" },
+        // State Management & Data Fetching
+        { icon: SiReactquery, name: "React Query (TanStack)" },
         { icon: SiRedux, name: "Redux Toolkit" },
+        { icon: TbBrandGraphql, name: "GraphQL" },
 
-        // Styling & UI
+        // Backend & Database (The Full-Stack Core)
+        { icon: TbBrandPrisma, name: "Prisma ORM" },
+        { icon: BiLogoPostgresql, name: "PostgreSQL" },
+        { icon: SiZod, name: "Zod Validation" },
+
+        // Styling & UI Frameworks
         { icon: SiTailwindcss, name: "Tailwind CSS" },
-        { icon: FaSass, name: "Sass / SCSS" },
+        { icon: SiShadcnui, name: "ShadCN UI" },
         { icon: SiMui, name: "Material UI" },
         { icon: SiDaisyui, name: "DaisyUI" },
-        { icon: SiShadcnui, name: "ShadCN UI" },
-        { icon: FaBootstrap, name: "Bootstrap" },
+        { icon: FaSass, name: "Sass / SCSS" },
 
-        // Auth & Architecture
-        { icon: SiAuth0, name: "NextAuth.js" },
-
-        // DevOps (Knowledge Level)
-        { icon: FaDocker, name: "Docker (Fundamentals)" },
-        { icon: SiKubernetes, name: "Kubernetes (Basic Concepts)" },
-
-        // Tools
+        // Workflow & Tools
         { icon: FaGit, name: "Git & GitHub" },
         { icon: SiPostman, name: "Postman" },
         { icon: FaFigma, name: "Figma" },
     ]
+};
 
-}
 export const links = [
     {
         name: "home",
@@ -88,7 +89,7 @@ export const links = [
 
 export const state = [
     {
-        num: 3,
+        num: 4,
         text: "Years of experience",
     },
     {
@@ -96,11 +97,11 @@ export const state = [
         text: "Projects completed",
     },
     {
-        num: 5,
+        num: 12,
         text: "Technologies mastered",
     },
     {
-        num: 273,
+        num: 2500,
         text: "Code commits",
     },
 ];
@@ -108,34 +109,39 @@ export const state = [
 export const services = [
     {
         num: "01",
-        title: 'Front-end Developer',
-        description: "Specializing in translating design into clean, optimized, and maintainable code using frameworks like React and tools like Tailwind CSS to create dynamic and interactive user interfaces.",
+        title: 'Front-end Development',
+        description: "Building high-performance SaaS platforms and enterprise dashboards using React and Next.js. Specializing in complex state management, data-fetching via React Query, and creating dynamic, role-based user interfaces.",
         href: "",
     },
     {
         num: "02",
-        title: 'FullStack Developer',
-        description: "Delivering complete web solutions by developing both client-side and server-side applications, integrating databases, APIs, and ensuring smooth deployment and scalability.",
+        title: 'Full-Stack Integration',
+        description: "Developing end-to-end web solutions by integrating Next.js backend architectures with relational PostgreSQL databases using Prisma ORM. Focused on secure workflows, API design, and schema validations via Zod.",
         href: "",
     },
-]
+    {
+        num: "03",
+        title: 'UI/UX & Design Systems',
+        description: "Crafting intuitive, minimalist user experiences for complex enterprise tools. Specialized in building scalable design systems using Atomic Design principles, ensuring visual consistency, accessibility, and seamless design-to-code handoff.",
+        href: "",
+    },
+];
 
 export const about = {
     title: "About me",
-    description: `Frontend Developer with 3 years of experience in creating scalable web applications, enterprise dashboards, and multi-tenant SaaS platforms. Skilled in React.js, Next.js, TypeScript, Tailwind CSS, Material UI, ShadCN UI, and modern backend technologies. Passionate about building maintainable, high-performance applications and delivering seamless user experiences.`,
-
+    description: "I am a results-driven Frontend & Full-Stack Developer passionate about bridging the gap between robust engineering and intuitive user experiences. I thrive in fast-paced, Agile environments, taking absolute ownership of features from database schemas to pixel-perfect UIs, always ensuring clean, maintainable code that drives real business value.",
     info: [
         {
             fieldName: "Name",
-            fieldValue: "Somaya Adel El-khatteb"
+            fieldValue: "Somaya Adel El-khateeb" 
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+20) 128 906 0375"
+            fieldValue: "(+20) 120 818 8574"
         },
         {
             fieldName: "Experience",
-            fieldValue: "3+ Years"
+            fieldValue: "4+ Years"
         },
         {
             fieldName: "WhatsApp",
@@ -149,7 +155,6 @@ export const about = {
             fieldName: "Nationality",
             fieldValue: "Egyptian"
         },
-
         {
             fieldName: "Freelance",
             fieldValue: "Available"
@@ -163,43 +168,64 @@ export const about = {
             fieldValue: "dev.somayaadelelkhateeb@gmail.com"
         },
     ]
-}
+};
 
 export const experience = {
     icon: "",
     title: "My Experience",
-    description: `Frontend Developer with hands-on experience working in two professional environments, 
-building real-world web applications using Next.js, TypeScript, and modern frontend tools. 
-
-Experienced in implementing authentication flows, dashboards, and multi-page websites, 
-with a strong focus on clean architecture, reusable components, and maintainable code. 
-Worked extensively with NextAuth for session-based authentication and React Query 
-for efficient server-state management.
-
-Comfortable collaborating within teams, translating UI/UX designs into functional interfaces, 
-and developing scalable features such as dark/light mode, multi-language support (Arabic & English), 
-and role-based dashboards. Actively seeking opportunities to grow as a frontend developer 
-in a challenging, product-driven environment.
-`,
+    description: "Frontend & Full-Stack Developer with 4 years of proven experience engineering scalable SaaS platforms, enterprise dashboards, and dynamic e-commerce solutions. Specialized in architecting reusable UI systems, robust authentication flows, role-based access control (RBAC), and high-performance data fetching setups.",
     items: [
-        { company: "ComplyMarket", position: "Frontend Developer", duration: "April 2025 – Present" },
-        { company: "Smartive Media", position: "Frontend Developer", duration: "March 2024 – June 2025" },
+        {
+            company: "ComplyMarket",
+            position: "Frontend Developer",
+            duration: "Jun 2025 – Present"
+        },
+        {
+            company: "Vive Healthy Snacks",
+            position: "Freelance Web Developer",
+            duration: "Apr 2026 – Present"
+        },
+        {
+            company: "SmartiveMedia",
+            position: "Frontend Developer",
+            duration: "Mar 2023 – May 2025"
+        },
     ]
-}
+};
 
 export const education = {
     icon: "",
     title: "My Education",
-    description: `Bachelor’s degree in Computer and Information Systems from Alexandria University, with a strong foundation in web development, software engineering, and programming principles. Additional professional training in Frontend development through Udacity and Manara.`,
+    description: "Hold a Bachelor's degree in Computer and Information Systems from Alexandria University, built upon a solid foundation of software engineering principles. Continuously advancing my technical expertise through rigorous, specialized frontend development tracks at Manara, Elevate, and Udacity.",
     items: [
-        { institution: "Elevate", degree: "Frontend Development Program", specialization: "Advanced Frontend Training", duration: "Ongoing" },
-        { institution: "Manara", degree: "Frontend Development Program", specialization: "Advanced Frontend Training", duration: "Ongoing" },
-        { institution: "Alexandria University", degree: "Bachelor’s Degree in Computer and Information Systems", specialization: "IT Section", duration: "Graduated 2022" },
-        { institution: "Udacity", degree: "Professional Web Development", specialization: "Frontend Development", duration: "Completed 2022" },
+        { 
+            institution: "Elevate", 
+            degree: "Frontend Development Program", 
+            specialization: "Advanced Frontend Training", 
+            duration: "Completed" 
+        },
+        { 
+            institution: "Manara", 
+            degree: "Frontend Development Program", 
+            specialization: "Advanced Frontend Training", 
+            duration: "Ongoing" 
+        },
+        { 
+            institution: "Alexandria University", 
+            degree: "Bachelor’s Degree in Computer and Information Systems", 
+            specialization: "IT Section", 
+            duration: "Graduated 2022" 
+        },
+        { 
+            institution: "Udacity", 
+            degree: "Professional Web Development", 
+            specialization: "Frontend Development", 
+            duration: "Completed 2022" 
+        },
     ]
-}
+};
 
-export const projects = [
+export const projects: ProjectItem[] = [
     {
         num: '1',
         category: "frontend",
@@ -243,7 +269,7 @@ export const projects = [
         description: "Snapgram is a modern social media web application built with Next.js and powered by a Node.js backend and Prisma ORM that allows users to create edit delete and save posts as well as add them to favorites the platform supports image uploads via Cloudinary enables smooth and responsive UI using Tailwind CSS and Radix UI components and integrates authentication and secure data handling using JWT and bcrypt with a fully functional CRUD system for managing posts Snapgram also features responsive design dark mode theme toggling and seamless user experience enhanced by React Query Redux Toolkit and React Hook Form",
         demo: "https://snapgram-social-media-app.netlify.app",
         github: "https://github.com/somaya-77/snapGram",
-        stack: [{ name: "nextJS" }, { name: "typescript" }, { name: "prisma" }, { name: "postgress" }, { name: "tailwindcss" }],
+        stack: [{ name: "nextJS" }, { name: "typescript" }, { name: "prisma ORM" }, { name: "postgress" }, { name: "tailwindcss" }],
         image: "/assets/snapgram.png",
     },
     {
@@ -314,4 +340,4 @@ export const projects = [
     //     image: "http://grgreferf",
     // },
 
-]
+];
