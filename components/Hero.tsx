@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl inline-flex mb-3">Software Developer</span>
             <h1 className="h1 mb-6">Hello I&apos;m <br /> <span className="mt-2 inline-flex text-accent">Somaya Adel El-khateeb</span></h1>
-            <p className="max-w-[650px] mb-9 text-white/80">I’m a Frontend Developer with 4 years of experience building scalable, business-driven web applications and enterprise dashboards using modern technologies.
+            <p className="max-w-[650px] mb-9 text-white/80">I’m a Frontend Developer with 3 years of experience building scalable, business-driven web applications and enterprise dashboards using modern technologies.
 
                 I specialize in React.js and Next.js, with a strong focus on multi-tenant SaaS platforms, role-based access control (RBAC), and custom e-commerce systems. My expertise spans building reusable UI architectures, schema-based data validations using Zod, and optimizing server-state management via React Query.
 
