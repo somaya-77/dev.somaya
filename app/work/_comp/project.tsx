@@ -9,6 +9,7 @@ import ProjectDetails from './project-details';
 import ImageSlider from './image-slider';
 
 export default function Project() {
+    
     const [project, setProject] = useState(projects[0]);
 
     return (

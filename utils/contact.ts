@@ -28,7 +28,7 @@ export const info = [
 
 export const skills = {
     title: "My skills",
-    description: "Frontend & Full-Stack Developer with 4 years of experience delivering high-performance SaaS applications, complex admin dashboards, and scalable e-commerce solutions. Expert in crafting resilient responsive architectures, optimizing server-state management, and deploying robust full-stack data layers.",
+    description: "Frontend & Full-Stack Developer with 3 years of experience delivering high-performance SaaS applications, complex admin dashboards, and scalable e-commerce solutions. Expert in crafting resilient responsive architectures, optimizing server-state management, and deploying robust full-stack data layers.",
     skillsList: [
         // Core Web & Languages
         { icon: FaHtml5, name: "HTML5" },
@@ -89,7 +89,7 @@ export const links = [
 
 export const state = [
     {
-        num: 4,
+        num: 3,
         text: "Years of experience",
     },
     {
@@ -141,7 +141,7 @@ export const about = {
         },
         {
             fieldName: "Experience",
-            fieldValue: "4+ Years"
+            fieldValue: "3+ Years"
         },
         {
             fieldName: "WhatsApp",
@@ -173,22 +173,17 @@ export const about = {
 export const experience = {
     icon: "",
     title: "My Experience",
-    description: "Frontend & Full-Stack Developer with 4 years of proven experience engineering scalable SaaS platforms, enterprise dashboards, and dynamic e-commerce solutions. Specialized in architecting reusable UI systems, robust authentication flows, role-based access control (RBAC), and high-performance data fetching setups.",
+    description: "Frontend & Full-Stack Developer with 3 years of proven experience engineering scalable SaaS platforms, enterprise dashboards, and dynamic e-commerce solutions. Specialized in architecting reusable UI systems, robust authentication flows, role-based access control (RBAC), and high-performance data fetching setups.",
     items: [
         {
             company: "ComplyMarket",
             position: "Frontend Developer",
-            duration: "Jun 2025 – Present"
-        },
-        {
-            company: "Vive Healthy Snacks",
-            position: "Freelance Web Developer",
-            duration: "Apr 2026 – Present"
+            duration: "May 2025 – Present"
         },
         {
             company: "SmartiveMedia",
             position: "Frontend Developer",
-            duration: "Mar 2023 – May 2025"
+            duration: "Mar 2023 – Mar 2025"
         },
     ]
 };
