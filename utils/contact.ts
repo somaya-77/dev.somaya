@@ -183,7 +183,7 @@ export const experience = {
         {
             company: "SmartiveMedia",
             position: "Frontend Developer",
-            duration: "Mar 2023 – Mar 2025"
+            duration: "Jan 2024 – Apr 2025"
         },
     ]
 };
