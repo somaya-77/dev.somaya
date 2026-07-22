@@ -1,6 +1,6 @@
-import {  FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { 
-    FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaSass, FaBootstrap, FaGit, FaFigma 
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+    FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaSass, FaBootstrap, FaGit, FaFigma
 } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
@@ -133,7 +133,7 @@ export const about = {
     info: [
         {
             fieldName: "Name",
-            fieldValue: "Somaya Adel El-khateeb" 
+            fieldValue: "Somaya Adel El-khateeb"
         },
         {
             fieldName: "Phone",
@@ -173,7 +173,7 @@ export const about = {
 export const experience = {
     icon: "",
     title: "My Experience",
-    description: "Frontend & Full-Stack Developer with 3 years of proven experience engineering scalable SaaS platforms, enterprise dashboards, and dynamic e-commerce solutions. Specialized in architecting reusable UI systems, robust authentication flows, role-based access control (RBAC), and high-performance data fetching setups.",
+    description: "Results-driven Frontend Engineer with 3+ years of experience architecting high-performance, configuration-driven SaaS and multi-tenant enterprise applications using React, Next.js, and TypeScript. Proven track record of designing reusable component systems adopted across 10+ product modules, cutting duplicated engineering effort and long-term maintenance cost. Skilled at translating Figma designs into production-ready UI, implementing secure RBAC and authentication systems, and shipping complex, data-heavy dashboards for enterprise and B2B clients. Comfortable owning features end-to-end - from architecture and API integration to polished, accessible interfaces.",
     items: [
         {
             company: "ComplyMarket",
@@ -193,29 +193,29 @@ export const education = {
     title: "My Education",
     description: "Hold a Bachelor's degree in Computer and Information Systems from Alexandria University, built upon a solid foundation of software engineering principles. Continuously advancing my technical expertise through rigorous, specialized frontend development tracks at Manara, Elevate, and Udacity.",
     items: [
-        { 
-            institution: "Elevate", 
-            degree: "Frontend Development Program", 
-            specialization: "Advanced Frontend Training", 
-            duration: "Completed" 
+        {
+            institution: "Elevate",
+            degree: "Frontend Development Program",
+            specialization: "Advanced Frontend Training",
+            duration: "Completed"
         },
-        { 
-            institution: "Manara", 
-            degree: "Frontend Development Program", 
-            specialization: "Advanced Frontend Training", 
-            duration: "Ongoing" 
+        {
+            institution: "Manara",
+            degree: "Frontend Development Program",
+            specialization: "Advanced Frontend Training",
+            duration: "Ongoing"
         },
-        { 
-            institution: "Alexandria University", 
-            degree: "Bachelor’s Degree in Computer and Information Systems", 
-            specialization: "IT Section", 
-            duration: "Graduated 2022" 
+        {
+            institution: "Alexandria University",
+            degree: "Bachelor’s Degree in Computer and Information Systems",
+            specialization: "IT Section",
+            duration: "Graduated 2022"
         },
-        { 
-            institution: "Udacity", 
-            degree: "Professional Web Development", 
-            specialization: "Frontend Development", 
-            duration: "Completed 2022" 
+        {
+            institution: "Udacity",
+            degree: "Professional Web Development",
+            specialization: "Frontend Development",
+            duration: "Completed 2022"
         },
     ]
 };
@@ -223,6 +223,31 @@ export const education = {
 export const projects: ProjectItem[] = [
     {
         num: '1',
+        category: "full-stack",
+        title: "people flow",
+        description:
+            "Built the platform end-to-end as a solo developer - frontend, backend APIs, database design, and authentication -supporting companies, departments, employees, attendance tracking, and leave management workflows. Designed a relational PostgreSQL schema via Prisma ORM covering company structures, employee hierarchies, attendance records, leave policies/balances, and approval workflows. Implemented authentication and authorization using NextAuth, JWT, refresh tokens, protected routes, and role-based access control (RBAC) for Super Admin, Company Admin, Manager, and Employee roles. Built scalable REST APIs using Node.js and Prisma with reusable service layers and business-rule validation.",
+        demo: "https://employee-operations-platform-fronte.vercel.app",
+        github: "https://github.com/somaya-77/Employee_Operations_Platform_Frontend",
+        stack: [{ name: "next.js" }, { name: "Node.js" }, { name: "typescript" }, { name: "next auth" }, { name: "shadcn" }, { name: "tailwindcss" }],
+        image: "/assets/people.png",
+        status: "progress",
+    },
+    {
+        num: '2',
+        category: "full-stack",
+        title: "vive app",
+        description:
+            "Architected an e-commerce application end-to-end as a solo developer, including responsive custom UI, product management workflows, and relational database schema design. ",
+        demo: "https://vive-sandy.vercel.app",
+        github: "https://github.com/somaya-77/Vive",
+        stack: [{ name: "next.js" }, { name: "prisma - orm" }, { name: "typescript" }, { name: "shadcn" }, { name: "tailwindcss" }
+        ],
+        image: "/assets/vive.png",
+        status: "progress",
+    },
+    {
+        num: '3',
         category: "frontend",
         title: "rose app",
         description:
@@ -232,29 +257,6 @@ export const projects: ProjectItem[] = [
         stack: [{ name: "next.js" }, { name: "react query" }, { name: "typescript" }, { name: "next auth" }, { name: "shadcn" }, { name: "tailwindcss" }, { name: "i18n (EN / AR)" },
         { name: "Dark / Light Mode" },],
         image: "/assets/rose.png",
-        status: "progress",
-    },
-    {
-        num: '2',
-        category: "frontend",
-        title: "exam app",
-        description:
-            "A frontend-focused exam application featuring authentication, protected routes, and a dashboard-based architecture. Implemented using Next.js and TypeScript, with NextAuth for session management, React Query for server state handling, and Shadcn UI components styled with Tailwind CSS.",
-        demo: "https://examapp3.netlify.app",
-        github: "https://github.com/somaya-77/exam-app",
-        stack: [{ name: "next.js" }, { name: "nextAuth" }, { name: "typescript" }, { name: "react query" }, { name: "shadcn" }, { name: "tailwindcss" }],
-        image: "/assets/exam.png",
-
-    },
-    {
-        num: '3',
-        category: "full-stack",
-        title: "electro",
-        description: "Electro is a full-stack e-commerce web application built with Next.js for the frontend and Prisma ORM for the backend. It provides a seamless shopping experience with two user roles: admin and regular user. Admins can manage products through a complete CRUD system, allowing them to add, update, and delete products. Users can browse products, add them to their favorites, compare different items, and complete purchases easily. The project integrates modern technologies such as Tailwind CSS, Redux Toolkit, ShadCN UI, Framer Motion, React Hook Form, and Zod for validation, along with Prisma ORM to efficiently handle the database and data models. The application offers a responsive and interactive interface, with secure authentication for both admin and user roles.",
-        demo: "https://electro-nextjs.netlify.app",
-        github: "https://github.com/somaya-77/Electro-Next-js",
-        stack: [{ name: "next.js" }, { name: "prisma ORM" }, { name: "typescript" }, { name: "redux-toolkit" }, { name: "shadcn" }, { name: "tailwindcss" }],
-        image: "/assets/electro.png",
         status: "progress",
     },
     {
@@ -281,7 +283,7 @@ export const projects: ProjectItem[] = [
         num: '6',
         category: "frontend",
         title: "travel",
-        description: "Travel UI is a visually captivating and fully responsive travel-themed user interface built using HTML, Sass, and JavaScript. The project showcases a refined layout with deeply structured Flexbox design, ensuring fluid alignment and responsiveness across all screen sizes. The interface delivers a clean, modern look, enhanced with professional animations that create smooth transitions and engaging interactions. Sass is used to write modular, maintainable styles with variables and mixins, enabling a scalable and well-organized styling system. The result is a polished frontend project that highlights both design aesthetics and frontend development best practices.",
+        description: "Travel UI is a visually captivating and fully responsive travel-themed user interface built using HTML, Sass, and JavaScript. The project showcases a refined layout with deeply structured Flex-box design, ensuring fluid alignment and responsiveness across all screen sizes. The interface delivers a clean, modern look, enhanced with professional animations that create smooth transitions and engaging interactions. Sass is used to write modular, maintainable styles with variables and mixins, enabling a scalable and well-organized styling system. The result is a polished frontend project that highlights both design aesthetics and frontend development best practices.",
         demo: "https://travel-photo.netlify.app",
         github: "https://github.com/somaya-77/Travel",
         stack: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
@@ -314,25 +316,4 @@ export const projects: ProjectItem[] = [
         stack: [{ name: "html" }, { name: "css" }],
         image: "/assets/brave.png",
     },
-    //     {
-    //     num: '05',
-    //     category: "frontend",
-    //     title: "",
-    //     description: "",
-    //     demo: "",
-    //     github: "",
-    //     stack: [{ name: "" }, { name: "" }, { name: "" }],
-    //     image: "http://grgreferf",
-    // },
-    //     {
-    //     num: '05',
-    //     category: "frontend",
-    //     title: "archee",
-    //     description: "",
-    //     demo: "",
-    //     github: "",
-    //     stack: [{ name: "" }, { name: "" }, { name: "" }],
-    //     image: "http://grgreferf",
-    // },
-
 ];
