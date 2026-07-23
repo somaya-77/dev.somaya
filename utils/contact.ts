@@ -230,7 +230,7 @@ export const projects: ProjectItem[] = [
         demo: "https://employee-operations-platform-fronte.vercel.app",
         github: "https://github.com/somaya-77/Employee_Operations_Platform_Frontend",
         stack: [{ name: "next.js" }, { name: "Node.js" }, { name: "typescript" }, { name: "next auth" }, { name: "shadcn" }, { name: "tailwindcss" }],
-        image: "/assets/people.png",
+        image: "/assets/people-flow.png",
         status: "progress",
     },
     {
