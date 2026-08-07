@@ -28,7 +28,7 @@ export const info = [
 
 export const skills = {
     title: "My skills",
-    description: "Frontend & Full-Stack Developer with 3 years of experience delivering high-performance SaaS applications, complex admin dashboards, and scalable e-commerce solutions. Expert in crafting resilient responsive architectures, optimizing server-state management, and deploying robust full-stack data layers.",
+    description: "Frontend & Full-Stack Developer with 3+ years of experience delivering high-performance SaaS applications, complex admin dashboards, and scalable e-commerce solutions. Expert in crafting resilient responsive architectures, optimizing server-state management, and deploying robust full-stack data layers.",
     skillsList: [
         // Core Web & Languages
         { icon: FaHtml5, name: "HTML5" },
@@ -93,16 +93,16 @@ export const state = [
         text: "Years of experience",
     },
     {
-        num: 17,
+        num: 9,
         text: "Projects completed",
     },
     {
-        num: 12,
+        num: 20,
         text: "Technologies mastered",
     },
     {
-        num: 2500,
-        text: "Code commits",
+        num: 9,
+        text: "Public repositories",
     },
 ];
 
@@ -231,7 +231,7 @@ export const projects: ProjectItem[] = [
         github: "https://github.com/somaya-77/Employee_Operations_Platform_Frontend",
         stack: [{ name: "next.js" }, { name: "Node.js" }, { name: "typescript" }, { name: "next auth" }, { name: "shadcn" }, { name: "tailwindcss" }],
         image: "/assets/people-flow.png",
-        status: "progress",
+        status: "development",
     },
     {
         num: '2',
@@ -244,7 +244,7 @@ export const projects: ProjectItem[] = [
         stack: [{ name: "next.js" }, { name: "prisma - orm" }, { name: "typescript" }, { name: "shadcn" }, { name: "tailwindcss" }
         ],
         image: "/assets/vive.png",
-        status: "progress",
+        status: "live",
     },
     {
         num: '3',
@@ -257,7 +257,7 @@ export const projects: ProjectItem[] = [
         stack: [{ name: "next.js" }, { name: "react query" }, { name: "typescript" }, { name: "next auth" }, { name: "shadcn" }, { name: "tailwindcss" }, { name: "i18n (EN / AR)" },
         { name: "Dark / Light Mode" },],
         image: "/assets/rose.png",
-        status: "progress",
+        status: "live",
     },
     {
         num: '4',
@@ -268,6 +268,7 @@ export const projects: ProjectItem[] = [
         github: "https://github.com/somaya-77/snapGram",
         stack: [{ name: "nextJS" }, { name: "typescript" }, { name: "prisma ORM" }, { name: "postgress" }, { name: "tailwindcss" }],
         image: "/assets/snapgram.png",
+        status: "live",
     },
     {
         num: '5',
@@ -278,6 +279,7 @@ export const projects: ProjectItem[] = [
         github: "https://github.com/somaya-77/Comfy-store",
         stack: [{ name: "reactJs" }, { name: "redux toolkit" }, { name: "api" }, { name: "dasyUI" }, { name: "tailwindcss" }, { name: "react router" }],
         image: "/assets/comfystore.png",
+        status: "live",
     },
     {
         num: '6',
@@ -288,6 +290,7 @@ export const projects: ProjectItem[] = [
         github: "https://github.com/somaya-77/Travel",
         stack: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
         image: "/assets/travel.png",
+        status: "live",
     },
     {
         num: '7',
@@ -297,6 +300,7 @@ export const projects: ProjectItem[] = [
         github: "https://github.com/somaya-77/Arceeh",
         stack: [{ name: "html" }, { name: "css" }],
         image: "/assets/archee.png",
+        status: "live",
     },
     {
         num: '8',
@@ -306,6 +310,7 @@ export const projects: ProjectItem[] = [
         github: "https://github.com/somaya-77/Demo",
         stack: [{ name: "html" }, { name: "css" }],
         image: "/assets/demo.png",
+        status: "live",
     },
     {
         num: '9',
@@ -315,5 +320,6 @@ export const projects: ProjectItem[] = [
         github: "https://github.com/somaya-77/Brave",
         stack: [{ name: "html" }, { name: "css" }],
         image: "/assets/brave.png",
+        status: "live",
     },
 ];

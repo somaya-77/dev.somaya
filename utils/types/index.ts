@@ -11,5 +11,5 @@ export interface ProjectItem {
     github: string;
     stack: ProjectStack[];
     image: string;
-    status?: "progress" | "completed"; 
+    status?: "development" | "live"; 
 }

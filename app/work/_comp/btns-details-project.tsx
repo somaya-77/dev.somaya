@@ -37,15 +37,24 @@ export default function BtnsDetailsProject({ project }: { project: ProjectItem }
                 </TooltipProvider>
             </Link>
 
-            {/* status */}
-            <div>
-                {project.status === "progress" && (
-                    <span className="text-accent">
-                        In Progress
-                        <span className="ml-1 animate-dots">...</span>
-                    </span>
-                )}
-            </div>
+            {project.status && (
+                <span
+                    className={
+                        "text-sm font-medium px-3 py-1.5 rounded-full border " +
+                        (project.status === "live"
+                            ? "text-emerald-400 border-emerald-400/30 bg-emerald-400/10"
+                            : project.status === "development"
+                                ? "text-amber-400 border-amber-400/30 bg-amber-400/10"
+                                : "text-white/40 border-white/15 bg-white/5")
+                    }
+                >
+                    {project.status === "live"
+                        ? "Live"
+                        : project.status === "development"
+                            ? "In Development"
+                            : "Archived"}
+                </span>
+            )}
 
         </div>
     )

@@ -35,12 +35,13 @@ export default function ImageSlider({ projects, setProject, project }: Props) {
                                 {/* overlay */}
                                 <div className='absolute top-0 bottom-0 w-full h-full z-10'></div>
 
-                                <div className="w-full h-[460px] rounded-xl overflow-hidden flex items-center justify-center ">
+                                <div className="w-full h-[460px] relative rounded-xl overflow-hidden flex items-center justify-center ">
                                     <Image
-                                    fill
-                                        src={project.image}
-                                        alt={project.title}
-                                        className="w-full h-full object-contain p-4 transition-all duration-500 hover:scale-105"
+                                        fill
+                                        sizes="(max-width: 1280px) 100vw, 50vw"
+                                        src={item.image}
+                                        alt={item.title}
+                                        className="object-contain p-4 transition-all duration-500 group-hover:scale-105"
                                     />
                                 </div>
                             </div>

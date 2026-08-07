@@ -19,14 +19,13 @@ const Photo = () => {
                                 priority
                                 fill
                                 quality={100}
-                                className="object-cover"
+                                className="object-cover relative"
                             />
                             <div className="absolute inset-0 bg-black/20 z-10 rounded-full" />
                         </div>
                     </div>
 
                 </motion.div>
-
 
                 <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]" fill="transparent" viewBox="0 0 506 506" xmlns="https://www.w3.org/2000/svg">
                     <motion.circle cx="253" cy="253" r="250" stroke="#ec4899" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" initial={{ strokeDasharray: "24 10 0 0" }}
